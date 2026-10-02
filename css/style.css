@@ -28,6 +28,7 @@ nav a:hover { color: var(--cor-principal); }
 /* SERVICOS */
 section { padding: 58px 8%; }
 .services { text-align: center; }
+.benefits { text-align: center; background: #eaf3ed; }
 .services h2, .contact h2 { font-size: 30px; }
 .items { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 30px; text-align: left; }
 .item { padding: 22px; background: #fff; border-bottom: 3px solid #89b79b; }
