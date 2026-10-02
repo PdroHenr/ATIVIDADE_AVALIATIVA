@@ -2,7 +2,7 @@
 :root {
 	--cor-principal: #176c54;
 	--cor-texto: #20302b;
-	--cor-fundo: #f7f8f3;
+	--cor-fundo: #ccff00;
 	--fonte-principal: Arial, sans-serif;
 }
 
@@ -28,10 +28,20 @@ nav a:hover { color: var(--cor-principal); }
 /* SERVICOS */
 section { padding: 58px 8%; }
 .services { text-align: center; }
-.benefits { text-align: center; background: #eaf3ed; }
 .services h2, .contact h2 { font-size: 30px; }
 .items { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 30px; text-align: left; }
-.item { padding: 22px; background: #fff; border-bottom: 3px solid #89b79b; }
+.item {
+	padding: 22px;
+	background: #fff;
+	border-left: 4px solid var(--cor-principal);
+	border-radius: 6px;
+	box-shadow: 0 3px 10px #20302b14;
+	transition: transform 0.2s, box-shadow 0.2s;
+}
+.item:hover {
+	transform: translateY(-4px);
+	box-shadow: 0 7px 16px #20302b20;
+}
 .item h3 { margin: 0 0 10px; color: var(--cor-principal); }
 .item p { margin: 0; color: #59675f; line-height: 1.6; }
 
