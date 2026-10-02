@@ -1,0 +1,51 @@
+/* CORES E FONTE: mude estes valores para personalizar o site */
+:root {
+	--cor-principal: #176c54;
+	--cor-texto: #20302b;
+	--cor-fundo: #f7f8f3;
+	--fonte-principal: Arial, sans-serif;
+}
+
+/* PAGINA INTEIRA */
+* { box-sizing: border-box; }
+body { margin: 0; color: var(--cor-texto); background: var(--cor-fundo); font: 16px var(--fonte-principal); }
+h1, h2, p { margin-top: 0; }
+a { color: inherit; text-decoration: none; }
+
+/* CABECALHO E MENU */
+header { height: 76px; padding: 0 8%; display: flex; align-items: center; justify-content: space-between; background: #fff; }
+.logo { color: var(--cor-principal); font-size: 21px; font-weight: bold; }
+nav { display: flex; gap: 28px; }
+nav a:hover { color: var(--cor-principal); }
+
+/* TITULO E APRESENTACAO */
+.hero { min-height: 490px; padding: 70px 8%; display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 48px; background: #eaf3ed; }
+.hero h1 { max-width: 520px; margin-bottom: 18px; font-size: 54px; line-height: 1.05; }
+.hero p { max-width: 470px; color: #52635b; line-height: 1.7; }
+.button { display: inline-block; padding: 14px 21px; border-radius: 5px; background: var(--cor-principal); color: #fff; font-weight: bold; }
+.photo { width: 100%; height: 340px; object-fit: cover; border-radius: 8px; }
+
+/* SERVICOS */
+section { padding: 58px 8%; }
+.services { text-align: center; }
+.services h2, .contact h2 { font-size: 30px; }
+.items { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 30px; text-align: left; }
+.item { padding: 22px; background: #fff; border-bottom: 3px solid #89b79b; }
+.item h3 { margin: 0 0 10px; color: var(--cor-principal); }
+.item p { margin: 0; color: #59675f; line-height: 1.6; }
+
+/* CONTATO E RODAPE */
+.contact { text-align: center; background: #203d34; color: #fff; }
+.contact p { color: #d7e5dc; }
+footer { padding: 20px; text-align: center; color: #66756d; font-size: 14px; }
+
+/* CELULAR: organiza o conteudo em uma coluna */
+@media (max-width: 700px) {
+	header { height: auto; padding: 20px 6%; align-items: flex-start; }
+	nav { gap: 12px; flex-direction: column; font-size: 14px; }
+	.hero { padding: 48px 6%; grid-template-columns: 1fr; gap: 28px; }
+	.hero h1 { font-size: 38px; }
+	.photo { height: 250px; }
+	section { padding: 44px 6%; }
+	.items { grid-template-columns: 1fr; }
+}
